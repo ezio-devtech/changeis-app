@@ -35,7 +35,7 @@ const FakeImageDisplay: React.FC = () => {
         {images.map((image, index) => (
           <li key={index}>
             <h2>{image.title}</h2>
-            <img src={image.url.replace("any", "people")} alt={image.title} />
+            <img src={image.url} alt={image.title} />
             <p>{image.description}</p>
           </li>
         ))}
